@@ -1,0 +1,47 @@
+{
+  "name": "floating-novel-reader",
+  "version": "1.0.0",
+  "description": "悬浮式小说阅读器 - 点击展开，离开隐藏",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --mac --publish never",
+    "build:all": "electron-builder --mac --win --publish never",
+    "build:win": "electron-builder --win --publish never"
+  },
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^24.9.1"
+  },
+  "build": {
+    "appId": "com.floating-novel-reader",
+    "productName": "悬浮小说阅读器",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "main.js",
+      "index.html",
+      "package.json"
+    ],
+    "asar": true,
+    "compression": "maximum",
+    "mac": {
+      "target": ["dmg"],
+      "icon": "icon.icns",
+      "asarUnpack": []
+    },
+    "win": {
+      "target": ["nsis"],
+      "icon": "icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "dependencies": {
+    "iconv-lite": "^0.7.2",
+    "jschardet": "^3.1.4"
+  }
+}
