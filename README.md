@@ -19,7 +19,7 @@
 
 ### 直接下载
 
-从 [Releases](https://github.com/your-username/floating-novel-reader/releases) 页面下载对应系统的安装包。
+从 [Releases](https://github.com/sucaohe/floating-novel-reader/releases) 页面下载对应系统的安装包。
 
 ### 从源码运行
 
