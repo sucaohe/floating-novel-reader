@@ -32,7 +32,10 @@
       "asarUnpack": []
     },
     "win": {
-      "target": ["nsis"],
+      "target": [{
+        "target": "nsis",
+        "arch": ["x64"]
+      }],
       "icon": "icon.ico"
     },
     "nsis": {
